@@ -7,8 +7,8 @@ import {
   Radio,
 } from "@material-ui/core";
 
-export default function RadioGroup(props) {
-  const { name, label, value, onChange, items } = props;
+export default function RadioGroup({ name, label, value, onChange, items }) {
+  // const { name, label, value, onChange, items } = props;
 
   return (
     <FormControl>
