@@ -7,8 +7,15 @@ import {
   FormHelperText,
 } from "@material-ui/core";
 
-export default function Select(props) {
-  const { name, label, value, error = null, onChange, options } = props;
+export default function Select({
+  name,
+  label,
+  value,
+  error = null,
+  onChange,
+  options,
+}) {
+  // const { name, label, value, error = null, onChange, options } = props;
 
   return (
     <FormControl variant="outlined" {...(error && { error: true })}>
