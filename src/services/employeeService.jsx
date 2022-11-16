@@ -20,7 +20,7 @@ export function insertEmployee(data) {
 export function generateEmployeeId() {
   if (localStorage.getItem(KEYS.employeeId) == null)
     localStorage.setItem(KEYS.employeeId, "0");
-  var id = parseInt(localStorage.getItem(KEYS.employeeId));
+  let id = parseInt(localStorage.getItem(KEYS.employeeId));
   localStorage.setItem(KEYS.employeeId, (++id).toString());
   return id;
 }
